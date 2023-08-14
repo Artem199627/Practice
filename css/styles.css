@@ -47,11 +47,16 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
-  width: 100%;
+.container 
+  /* width: 100%;
   max-width: 1440px;
   padding-left: 60px;
   padding-right: 60px;
+  margin: 0 auto; */
+
+.container {
+  max-width: 375px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .link {
