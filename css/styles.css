@@ -47,13 +47,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container 
-  /* width: 100%;
-  max-width: 1440px;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin: 0 auto; */
-
 .container {
   max-width: 375px;
   padding: 0 16px;
@@ -70,11 +63,6 @@ body {
 .header {
   background: #f7faff;
   border-bottom: 1px solid #e7e9fc;
-  /* background: var(--color-text); */
-  flex-shrink: 0;
-  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
-  /* padding: 0 60px; */
 }
 .header-container {
   padding: 0 60px;
@@ -118,105 +106,20 @@ body {
   padding: 26px 0;
 }
 
-.adress {
-  display: none;
-  font-style: normal;
-}
-.contact {
-  color: var(--color-contact);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact:hover,
-.contact:focus {
-  color: #404bbf;
-}
 /**------FOOTER-----**/
-.footer {
-  background-color: var(--brand-color);
-  padding: 100px 0;
-}
-.footer-logo {
-  color: var(--color-logo);
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.footer-logo-span {
-  color: var(--color-btn);
-}
-.footer-text {
-  color: var(--color-btn);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-}
-.footer-item {
-  width: 40px;
-  height: 40px;
-}
-.footer-link {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-icon {
-  fill: #f4f4fd;
-}
-.footer-link:hover,
-.footer-link:focus {
-  background-color: #31d0aa;
-}
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-.footer-container-text {
-  margin-right: 120px;
-}
-.footer-list {
-  display: flex;
-  gap: 16px;
-}
-.footer-media-text {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
 
 /** ------------- MAIN PAGE ------------**/
 
 /** ------Hero ------ **/
 /** ------About us ------ **/
 .about-section {
-  padding: 100px 0;
+  padding: 64px 0;
 }
-.text-container {
-  background: #f7faff;
-  justify-content: center;
-  width: 760px;
-  height: 500px;
+.about-us-foto {
+}
+.line-div {
+  display: flex;
+  gap: 20px;
 }
 .text-about {
   color: #0a224a;
@@ -225,36 +128,34 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 30px;
-  padding-top: 36px;
-  padding-left: 69px;
 }
 .title-about {
   color: #0a224a;
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
   text-transform: uppercase;
-  padding-left: 69px;
-  margin-bottom: 30px;
-  max-width: 622px;
+  margin-top: 30px;
 }
 .text2-about {
   color: #0a224a;
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  padding-left: 69px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .about-list {
   display: flex;
-  padding-left: 69px;
-  gap: 56px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 64px;
 }
 .title-item {
   color: #0a224a;
@@ -270,15 +171,52 @@ body {
   color: #0a224a;
   text-align: center;
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   max-width: 170px;
 }
-.about {
-  display: flex;
-  gap: 24px;
+.about-us-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/** ------Hero ------ **/
+.text-container {
+  background: #f7faff;
+}
+/** ------Price ------ **/
+.price {
+  padding-bottom: 64px;
+}
+
+.price-item {
+  border-top: 1px solid #0a224a;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+.price-item:last-child {
+  border-bottom: 1px solid #0a224a;
+}
+.price-prod {
+  color: #0a224a;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.price-price {
+  color: #0a224a;
+  text-align: right;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
 /** ------Hero ------ **/
